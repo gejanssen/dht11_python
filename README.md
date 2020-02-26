@@ -42,6 +42,31 @@ For working example, see `dht11_example.py` (you probably need to adjust pin for
 The file dht11.py is the library and does not need to be edited.
 
 
+# Testrun
+
+```
+gej@rpi-zw3:~/DHT11_Python $ python3 dht11_example.py 
+Traceback (most recent call last):
+  File "dht11_example.py", line 17, in <module>
+    result = instance.read()
+  File "/home/gej/DHT11_Python/dht11.py", line 34, in read
+    RPi.GPIO.setup(self.__pin, RPi.GPIO.OUT)
+RuntimeError: No access to /dev/mem.  Try running as root!
+gej@rpi-zw3:~/DHT11_Python $ 
+```
+
+Whoops, we need root rights
+
+```
+gej@rpi-zw3:~/DHT11_Python $ sudo python3 dht11_example.py 
+Last valid input: 2020-02-26 20:05:02.934488
+Temperature: 23.0 C
+Humidity: 34.0 %
+^CCleanup
+gej@rpi-zw3:~/DHT11_Python $ 
+```
+
+
 # License
 
 This project is licensed under the terms of the MIT license.
