@@ -7,6 +7,10 @@ I changed the pin and documented the pin better.
 
 This simple class can be used for reading temperature and humidity values from DHT11 sensor on Raspberry Pi.
 
+# Connect
+[![badge](https://raw.githubusercontent.com/gejanssen/ds18b20-python/master/raspberry-pi-ds18b20-connections.jpg)](https://raw.githubusercontent.com/gejanssen/ds18b20-python/master/raspberry-pi-ds18b20-connections.jpg)
+[![badge](https://raw.githubusercontent.com/gejanssen/dht11_python/master/rpi-dht11.jpg)](https://raw.githubusercontent.com/gejanssen/dht11_python/master/rpi-dht11.jpg)
+
 # Usage
 
 1. Instantiate the `DHT11` class with the pin number as constructor parameter.
